@@ -12,6 +12,8 @@
         <h1>Recipe Reccomendation App Meeting Minutes</h1>
         <h2>April 12, 2023</h2>
 
+        <em>No one is born a great cook <br> One learns by doing</em> <br>- Julia Child
+
         <h3>Helpful Links to Get Started:</h3>
 
         <nav>
@@ -20,6 +22,12 @@
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Docs</a></li>
               <li><a href="https://html.spec.whatwg.org/multipage/">Official HTML Specs</a></li>
             </ul>
+        </nav>
+
+        <nav>
+            <a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">Brief HTML Tutorial</a> <br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Docs</a> <br>
+            <a href="https://html.spec.whatwg.org/multipage/">Official HTML Specs</a>
         </nav>
 
         <hr>
@@ -51,25 +59,30 @@
         
             <h3>Attendance List</h3>
         
+
             <ul>
                 <li>Alessandra Tjitro</li>
-                <li>Ina Garten</li>
-                <li>Anthony Bourdain</li>
-                <li>Alex Guarnaschelli</li>
-                <li>Bobby Flay</li>
+                <li><a href="https://barefootcontessa.com/">Ina Garten</a></li>
+                <li><a href="https://www.facebook.com/AnthonyBourdain/">Anthony Bourdain</a></li>
+                <li><a href="https://alexguarnaschelli.com/">Alex Guarnaschelli</a></li>
+                <li><a href="https://www.foodnetwork.com/profiles/talent/bobby-flay">Bobby Flay</a></li>
             </ul>
         
             <h3>Recap of Initial Ideas</h3>
-        
-            
-        
-            <h3>Important Updates</h3>
 
             <ul>
-                <li> <b>Ina:</b> </li>
-                <li> <b>Anthony:</b></li>
-                <li> <b>Alex:</b></li>
-                <li> <b>Bobby:</b></li>
+                <li> Option for users to select <span>regional cuisine</span> preferences</li>
+                <li> Focus on functional mobile application first</li>
+            </ul>
+        
+            <h3>Team Member Updates</h3>
+
+            <ul>
+                <li> <b>Alessandra:</b> Phase 1 deadline is April 28, 2023</li>
+                <li> <b>Ina:</b> Set up Github </li>
+                <li> <b>Anthony:</b> Brushed up on HTML & git </li>
+                <li> <b>Alex:</b> Confirmed with <i>Food Network</i>. Recieved the OK to continue.</li>
+                <li> <b>Bobby:</b> Spoke with other chefs to gather reccomendations </li>
             </ul>
 
         </section>
@@ -79,22 +92,118 @@
         <section>
             <h2>Brainstorm</h2>
         
-        
+            <p>We want to decide on a workflow and organize when we need to start things by.
+                We suggested a brainstorm period where we discuss what we want to implement and how.
+                This also includes consulting other users/people to gather data on what they want to see.
+                Then we will move into the programming part once we have all the logistics and ideas 
+                sorted out. Once we have the basics, we can start discussing additional features and 
+                adding in what others said they might want to see. So, our process will look like:
+            </p>
+            <ol>
+                <li>Discuss basic features and the goal of this project</li>
+                <li>Gather preferences from people who might be using this</li>
+                <li>Program the bare basics & basic functionality</li>
+                <li>Add in additional features that were discussed early</li>
+                <li>Regroup and discuss</li>
+                <li>Repeat 4 & 5 as many times as necessary</li>
+            </ol>
+
+            <p>Anthony specializes in regional cuisines and was thinking of making
+                a <span>weekly spotlight</span> on different dishes such as <i>ratatoullie</i>
+                or <i>foie gras</i>. Ina will support on this feature and Anthony will lead.
+            </p>
+
+            <p>Bobby wants to advertise all of their shows and websites. Wants to create 
+                an author/developer section which includes everyone's biographies and links
+                to their work/shows. Bobby will lead ont his feature and Alex will support.
+            </p>
         
             <h3>Images</h3>
         
+            <img src="images/whiteboard.jpeg" alt="whiteboard flow from meeting" width="500">
         
+            <img src="images/whiteboard2.png" alt="whiteboard flow #2 from meeting" width="500">
         
            <h3>Meeting Audio & Video Recording</h3> 
         </section>
 
         <hr>
+
+        <h2>Questions/Concerns From this Meeting</h2>
+
+        <p>Might want to recruit more seasoned profressionals given the
+            inexperience of the group and the deadlines
+        </p>
+
+        <p>Need to gather sponsors and marketing team</p>
+
+        <p>Need to speak with <i>Food Network</i> about scope and details</p>
+
+        <hr>
+
+        <h2> Fill out this form! </h2>
+
+        Fill out this form to share any input regarding this application!
+        <form>
+            <fieldset>
+
+                <label>Enter your first name:</label> <input type="text"> <br><br>
+
+                <label>Enter your last name:</label> <input type="text"> <br><br>
+
+                <label>Enter the date:</label>
+                <input type="date"> <br><br>
+
+                <label>Check which of the following that applies to you:</label> <br>
+                <input type="checkbox"> I cook once a month <br>
+                <input type="checkbox"> I cook twice a month <br>
+                <input type="checkbox"> I cook one a week <br>
+                <input type="checkbox"> I cook 2 times a week <br>
+                <input type="checkbox"> I cook 3+ times a week<br><br>
+
+
+                <label>Which all of the following that apply to you:</label> <br>
+                <input type="radio"> I like cooking new recipes <br>
+                <input type="radio"> I like to read multiple recipes before I make a dish <br>
+                <input type="radio"> I like watching videos of recipes I'm looking at<br><br>
+
+                <label>Your age:</label><br>
+                <input list="ages">
+                <datalist id="ages">
+                    <option value="under 18">
+                    <option value="18 - 22">
+                    <option value="22 - 30">
+                    <option value="30 - 40">
+                    <option value="55+">
+                </datalist> <br><br>
+
+                <label>Which region of the US do you live in?</label><br>
+
+                <select>
+                    <option value="west coast">West Coast</option>
+                    <option value="east coast">East Coast</option>
+                    <option value="west coast">Midwest</option>
+                    <option value="west coast">South</option>
+                </select> <br><br>
+                
+                <label>Additional questions or concerns?</label><br>
+                <textarea>
+                    Enter text here
+                </textarea> <br><br>
+
+                <button>
+                    Submit
+                </button>
+
+            </fieldset>
+
+        </form>
         
 
     </main>
 
     <footer>
-        <h2>Questions? Concerns?</h2>
+
 
         <details>
             <summary>Meeting Details</summary>
