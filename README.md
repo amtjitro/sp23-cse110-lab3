@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-site: https://amtjitro.github.io/cse110-lab-2/
+site: https://amtjitro.github.io/sp23-cse110-lab3/
