@@ -1,0 +1,80 @@
+body {
+    background-color: #c4d9bc;
+}
+  
+h1 {
+    color: white;
+    margin-left: 20px;
+}
+
+h1.sample {
+    color: black;
+}
+
+h2, h3 {
+    color: lightcoral;
+}
+
+.agendaList {
+    background-color: beige;
+}
+
+#logistics {
+    background-color: purple;
+}
+
+* {
+    margin: 10px;
+}
+
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+a:link {
+    color: #c0ffee;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: pink;
+}
+
+a:active {
+    color: orange;
+}
+
+p:hover {
+    color: blue;
+}
+
+form label {
+    background-color: white;
+}
+
+section > p {
+    color: brown;
+}
+
+section li {
+    color: gray;
+}
+
+h2 ~ p {
+    color: red;
+}
+
+p + ol {
+    background-color: aqua;
+}
+
+section > ol[class="brainstorm"] {
+    background-color: black;
+}
+
