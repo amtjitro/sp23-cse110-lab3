@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Vina+Sans&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="mystyle.css">
     <title>Recipe Reccomendation App Meeting Minutes</title>
     <meta name="description" content="CSE110 Lab 2 Assignment" />
@@ -12,14 +18,10 @@
 
     <header>
 
-
-        <h1 class="sample"> SAMPLE HEADER</h1>
-        <h1> HELLO</h1>
-
         <h1>Recipe Reccomendation App Meeting Minutes</h1>
         <h2>April 12, 2023</h2>
 
-        <em>No one is born a great cook <br> One learns by doing</em> <br>- Julia Child
+        <em class="quote">No one is born a great cook <br> One learns by doing</em> <br>- Julia Child
 
         <h3>Helpful Links to Get Started:</h3>
 
@@ -37,12 +39,14 @@
 
     <main>
 
-        Nav Bar
-        <nav>
+        Nav Bar:
+        <nav class="navBar">
             <a href="#agenda">Agenda</a> |
             <a href="#logistics">Logistics</a> |
             <a href="#form">Form</a>
         </nav>
+
+        <hr>
        
         <section>
             <h2 id="agenda">Agenda</h2>
@@ -67,14 +71,19 @@
         
             <h3>Attendance List</h3>
         
+            <div class="flexContainer">
+                <ul>
+                    <div><li>Alessandra Tjitro</li></div>
+                    <div><li><a href="https://barefootcontessa.com/">Ina Garten</a></li></div>
+                    <div><li><a href="https://www.facebook.com/AnthonyBourdain/">Anthony Bourdain</a></li></div> </ul>
 
-            <ul>
-                <li>Alessandra Tjitro</li>
-                <li><a href="https://barefootcontessa.com/">Ina Garten</a></li>
-                <li><a href="https://www.facebook.com/AnthonyBourdain/">Anthony Bourdain</a></li>
-                <li><a href="https://alexguarnaschelli.com/">Alex Guarnaschelli</a></li>
-                <li><a href="https://www.foodnetwork.com/profiles/talent/bobby-flay">Bobby Flay</a></li>
-            </ul>
+
+                <ul>
+                    <div><li><a href="https://alexguarnaschelli.com/">Alex Guarnaschelli</a></li></div>
+                    <div><li><a href="https://www.foodnetwork.com/profiles/talent/bobby-flay">Bobby Flay</a></li></div>
+                </ul>
+
+            </div>
         
             <h3>Recap of Initial Ideas</h3>
 
@@ -85,13 +94,13 @@
         
             <h3>Team Member Updates</h3>
 
-            <ul>
+            <ul class="box">
                 <li> <b>Alessandra:</b> Phase 1 deadline is <strong>April 28, 2023</strong></li>
                 <li> <b>Ina:</b> Set up Github </li>
                 <li> <b>Anthony:</b> Brushed up on HTML & git </li>
                 <li> <b>Alex:</b> Confirmed with <i>Food Network</i>. Recieved the OK to continue.</li>
                 <li> <b>Bobby:</b> Spoke with other chefs to gather reccomendations </li>
-            </ul>
+            </ul class="box">
 
         </section>
 
@@ -125,13 +134,20 @@
                 an author/developer section which includes everyone's biographies and links
                 to their work/shows. Bobby will lead on this feature and Alex will support.
             </p>
-        
+            
             <h3>Images</h3>
-        
-            <img src="images/whiteboard.jpeg" alt="whiteboard flow from meeting" width="500">
-        
-            <img src="images/whiteboard2.png" alt="whiteboard flow #2 from meeting" width="500">
-        
+
+            <div class="images">
+                
+                
+                <img class="imageone" src="images/whiteboard.jpeg" alt="whiteboard flow from meeting" width="500">
+                
+                
+                
+                <img class="imagetwo" src="images/whiteboard2.png" alt="whiteboard flow #2 from meeting" width="250">    
+                
+
+            </div>
 
         </section>
 
@@ -139,29 +155,30 @@
 
         <h2>Meeting Audio & Video Recording</h2> 
 
-        <h3>Video</h3>
+        <h3>Video and Audio </h3>
+        <div>
 
-        <video width="450" controls>
-            <source src="cse110MeetingVideo.mp4" type="video/mp4">
-        </video>
+            <video width="450" controls>
+                <source src="cse110MeetingVideo.mp4" type="video/mp4">
+            </video>
+            
+            <br>
+            <audio controls>
+                <source src="cse110Audio.mp3">
+            </audio>
+        </div>
 
-        <h3>Audio</h3>
-
-        <audio controls>
-            <source src="cse110Audio.mp3">
-        </audio>
 
         <hr>
 
         <h2>Questions/Concerns From this Meeting</h2>
 
-        <p>Might want to recruit more seasoned profressionals given the
-            inexperience of the group and the deadlines
-        </p>
-
-        <p>Need to gather sponsors and marketing team</p>
-
-        <p>Need to speak with <i>Food Network</i> about scope and details</p>
+        <div class="gridcontainer">
+            <div class="griditem">recruit more seasoned profressionals</div>
+            <div class="griditem">gather sponsors/marketing team</div>
+            <div class="griditem">market</div>
+            <div class="griditem2">speak with <i>Food Network</i></div>
+        </div>
 
         <hr>
 
