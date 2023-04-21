@@ -1,39 +1,147 @@
 body {
     background-color: #c4d9bc;
 }
-  
-h1 {
-    color: white;
-    margin-left: 20px;
+
+/*Screen restrictions*/
+@media screen and (max-width: 1000px) {
+    body {
+      background-color: lightgreen;
+    }
 }
 
-h1.sample {
-    color: black;
+@media screen and (max-width: 600px) {
+    body {
+      background-color: greenyellow;
+    }
+}
+
+/*Universal*/
+* {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+
+    color: white;
+    font-size: 3vw;
+}
+
+.navBar {
+    position: fixed;
+    display: inline;
+}
+
+nav {
+    min-width: 50em;
+    position: static;
+}
+
+/*team member updates style*/
+.box {
+    border: 5px solid plum;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 25px 50px 75px 100px;
+}
+
+/*attendance list*/
+.flexContainer {
+    display: flex;
+    background-color: dodgerblue;
+    flex-direction: row;
+}
+
+.flexContainer div {
+    background-color: rgb(203, 203, 184);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*whiteboard images*/
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imageone {
+    flex-grow: 1;
+}
+
+.imagetwo {
+    flex-grow: 3;
+}
+
+em.quote{
+    color: rgb(195, 96, 24);
+    text-decoration: wavy underline hsla(263, 49%, 35%, 0.575);
 }
 
 h2, h3 {
-    color: lightcoral;
+    font-family: 'Vina Sans', cursive;
+    position: relative;
+    color: #c05780;
+    text-decoration: underline;
 }
 
 .agendaList {
-    background-color: beige;
+    border-style:double;
+    border-color: rgb(119, 163, 207);
+    border-width: 1.5ch;
+    border-radius: 50px;
+    margin: 25cm 50cm, 75cm 100cm;
+    padding: 25px 50px 75px 100px;
+    text-align: start;
+
+}
+
+/*Questions and suggestions*/
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 40px;
+    row-gap: 40px;
+    background-color: #4ae277;
+    padding: 10px;
+}
+  
+.griditem {
+    background-color: rgba(252, 232, 232, 0.8);
+    border: 1px dotted rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+.griditem2 {
+    background-color: rgba(252, 232, 232, 0.8);
+    border: 1px dotted rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 #logistics {
-    background-color: purple;
+    display: inline-block;
+    margin: auto;
 }
 
-* {
-    margin: 10px;
-}
-
+/*Form input*/
 input[type="text"] {
-    width: 150px;
-    display: block;
-    margin-bottom: 10px;
-    background-color: yellow;
+    width: 2in;
+    
+    background-color: rgb(231, 231, 199);
 }
 
+textarea {
+    max-width: 7in;
+    height: 1cm;
+}
+
+/*Link styling*/
 a:link {
     color: #c0ffee;
 }
@@ -55,19 +163,20 @@ p:hover {
 }
 
 form label {
-    background-color: white;
+    border: 2px dotted white;
 }
 
-section > p {
-    color: brown;
+/*cominators*/
+section > h2 {
+    color: red;
 }
 
 section li {
-    color: gray;
+    color: black;
 }
 
 h2 ~ p {
-    color: red;
+    color: rgb(8, 82, 80);
 }
 
 p + ol {
@@ -75,6 +184,6 @@ p + ol {
 }
 
 section > ol[class="brainstorm"] {
-    background-color: black;
+    background-color: gold;
 }
 
